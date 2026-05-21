@@ -155,3 +155,260 @@ ul {
   font-size: 0.95rem;
   line-height: 1.7;
 }
+
+.testimonials {
+    padding: 100px 80px;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonials-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 16px;
+    padding: 36px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: trasnform 0.3s ease;
+}
+
+.testimonials-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonials-text {
+    color: #cccccc;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    font-style: italic;
+}
+
+.testimonials-author {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.author-avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #6c63ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+.testimonials-author strong {
+    display: block;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.testimonials-author span {
+    color: #aaaaaa;
+    font-size: 0.8rem;
+}
+
+.cta {
+    padding: 120px 80px;
+    text-align: center;
+    background-color: #111111;
+    border-top: 1px solid #2a2a2a;
+}
+
+.cta h2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ffffff, #6c63ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cta p {
+    color: #aaaaaa;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-large {
+    padding: 18px 48px;
+    font-size: 1.1rem;
+}
+
+.footer {
+    background-color: #0a0a0a;
+    border-top: 1px solid #2a2a2a;
+    padding: 60px 80px 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.footer-brand p {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    max-width: 280px;
+    line-height: 1.7;
+}
+
+.footer-links h4 {
+    color:#ffffff;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #aaaaaa;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #6c63ff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-bottom: 30px;
+    color: #555555;
+    font-size: 0.85rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-bottom strong {
+    color: #6c63ff;
+}
+
+
+
+/* Tablet — 1024px */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 40px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .features {
+    padding: 80px 40px;
+  }
+
+  .testimonials {
+    padding: 80px 40px;
+  }
+
+  .cta {
+    padding: 80px 40px;
+  }
+
+  .footer {
+    padding: 60px 40px 30px;
+  }
+}
+
+/* Mobile — 768px */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  /* Hero */
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* Features */
+  .features {
+    padding: 60px 24px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 60px 24px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 60px 24px;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 60px 24px 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Small Mobile — 480px */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .cta h2 {
+    font-size: 1.6rem;
+  }
+}
